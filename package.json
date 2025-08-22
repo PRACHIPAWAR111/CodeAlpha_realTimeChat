@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-   "start": "npm run start --prefix backend"
-},
-
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@vitejs/plugin-react": "^5.0.1",
     "backend": "^0.0.0",
     "prefix": "^1.0.0"
   }
