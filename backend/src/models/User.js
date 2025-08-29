@@ -69,6 +69,3 @@ userSchema.methods.matchPassword = async function(enteredPassword) {
 export default User;
 
 
-// Create , updateAd
-
- // member since createdAt
