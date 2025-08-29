@@ -66,12 +66,12 @@ export async function sendFriendRequest(req, res) {
         .json({ message: "A friend request already exists between you and this user" });
     }
 
-    const FriendRequest = await FriendRequest.create({
+    const friendRequest = await FriendRequest.create({
       sender: myId,
       receiver: recipientId,
     });
 
-    res.status(201).json( FriendRequest);
+    res.status(201).json(friendRequest);
   } catch (error) {
     console.error("Error in sendFriendRequest controller", error.message);
     res.status(500).json({ message: "Internal Server Error" });
